@@ -2,6 +2,6 @@ require "sinatra/base"
 
 class Battle < Sinatra::Base
   get "/" do
-    "Start a fight!"
+    "Testing infrastructure working!"
   end
 end

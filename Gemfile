@@ -8,5 +8,6 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 ruby "3.0.2"
 gem "rspec"
 gem "sinatra"
+gem "capybara"
 
 gem "webrick", "~> 1.7"
