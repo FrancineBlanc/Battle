@@ -4,10 +4,13 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
 ruby "3.0.2"
-gem "rspec"
-gem "sinatra"
-gem "capybara"
+group :development, :test do
+  gem "rspec"
+  gem "capybara"
+  gem "selenium-webdriver"
+end
 
-gem "webrick", "~> 1.7"
+gem "sinatra"
+gem "sinatra-reloader"
+gem "webrick"
